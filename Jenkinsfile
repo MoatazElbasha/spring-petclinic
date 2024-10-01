@@ -23,7 +23,7 @@ pipeline {
         }
 	stage('store artifile') {
 	   steps{
-		archiveArtifacts artifacts: '/home/**/*.jar'
+		archiveArtifacts artifacts: '**/target/*.jar'
 		}
 	}
 }
